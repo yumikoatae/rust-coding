@@ -3,7 +3,8 @@
 //mod transaction_processor;
 //use transaction_processor::{get_transaction_input, process_transaction};
 //mod cart_calculator;
-mod order_state;
+//mod order_state;
+mod task_manager;
 
 fn main() {
     //age_checker::ask_for_age();
@@ -12,7 +13,8 @@ fn main() {
     //process_transaction(transaction);
     //cart_calculator::calculate_cart_total();
 
-    let order = order_state::OrderState::Processing;
-    order_state::print_order_status(order);
+    //let order = order_state::OrderState::Processing;
+    //order_state::print_order_status(order);
 
+    task_manager::start_task_manager();
 }
